@@ -5,13 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EX1</title>
-
-    
-    @media(max-width: 300px){
-        .button-text {
-            display: none;
-        }
-    }
     
 </head>
 <body>
@@ -21,11 +14,13 @@
     </script>
     <h1>html</h1>
     1+1
-
-    <button type="button" class="btn btn-default btn-md btn-block">
-        <i class="fa fa-plus"></i>
-        <span class="button-text">Add New Item</span>
-    </button>
-    
+    <input type="button" value="hi" onclick="alert('hi')">
+    <!-- onclick 속성의 값은 JavaScript가 와야 한다. 이 때에 속성 값은 웹브라우저가 기억하고 있다가 동작 시에 JS문법에 따라 웹브라우저가 해석하여 동작한다. 
+    이런 경우를 EVENT가 일어났다고 한다.-->
+    <input type="text" onchange="alert('changed')">
+    <input type="text" onkeydown="alert('key down!')">
+    <!-- onclick, onchange, onkeydown => 모두 event 속성이고 값으로는 JS가 와야한다. -->
+    <!-- 문자열(String) Javascript string 검색
+    변수(variable) 대입연산자('=') 사용가능 var, let / 상수(constant) -->
 </body>
-</html>
+</html>  
