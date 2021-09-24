@@ -5,13 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EX1</title>
+
+    
+    @media(max-width: 300px){
+        .button-text {
+            display: none;
+        }
+    }
+    
 </head>
 <body>
     <h1>JavaScript</h1>
     <script>
-        document.write(1+1)
+        document.write(1+1);
     </script>
     <h1>html</h1>
     1+1
+
+    <button type="button" class="btn btn-default btn-md btn-block">
+        <i class="fa fa-plus"></i>
+        <span class="button-text">Add New Item</span>
+    </button>
+    
 </body>
 </html>

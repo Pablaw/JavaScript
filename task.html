@@ -9,8 +9,9 @@
         #header{
             background-color:#24292f;
             display:grid;
-            grid-template-columns: 27px 1fr;
+            grid-template-columns: 27px 1900px;
             padding-left:20px;
+            height:47px;
         }
         #menu{
             color:white;
@@ -18,23 +19,35 @@
             font-size:13px;
             margin-left:15px;
             display:inline-block;
-            padding-top:15px;
+         
+        }
+        #imgs{line-height:46px;
+        }
+        #imgs img{
+            vertical-align:middle;
+        }
+        #lo{
+            padding-right:60%;
         }
         span{
             padding:10px;
         }
         img{
-           height:47px;
+           padding-top:7.5px;
         }
         body{
             margin:0;
         }
         #search{
             color:rgb(160, 160, 160);
-            border:3px solid gray;
+            border:1px solid gray;
             padding:3px;
             margin-right:10px;
             padding-right:137px;
+            border-radius:5px;
+        }
+        @media(max-width:995px){
+            .pulls{display:none;}
         }
     </style>
 </head>
@@ -45,11 +58,20 @@
     <div id="menu">
     <span id="search">Search or jump to...
     </span>
-    <span>Pulls</span>
+    <span id="lo">
+    <span class="pulls">Pull requests</span>
     <span>Issue</span>
     <span>Marketpalce</span>
     <span>Explore</span>
+</span>
+    <span id="imgs">
+    <img src="bell.jpg">
+    <img src="plus.jpg">
+    <img src="dropdown.jpg">
+    <img src="user.jpg">
+    <img src="dropdown.jpg">
     </div>
+</div>
 </div>
 </body>
 </html>
