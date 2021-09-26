@@ -22,15 +22,19 @@
          
         }
         .imgs{line-height:46px;
+            list-style-type:none;
+            float:right;
         }
         .imgs img{
             vertical-align:middle;
+            list-style-type: none;
         }
         .lo{
             padding-right:60%;
             font-weight:bold;
             list-style-type:none;
         }
+    
         span{
             padding:10px;
         }
@@ -55,27 +59,33 @@
           color:white;
           text-decoration:none;
         }
+        #left{
+            float:left;
+        }
     </style>
 </head>
 
 <body>
 <div class="header">
-    <img src="ghcat.jpg">
     <div class="menu">
+        <div id="left">
+        <img src="ghcat.jpg">
         <span class="search">Search or jump to...</span>
+        </div>
         <ul class="lo">
             <li><a href="http://github.com/pulls">Pull requests</a></li>
             <li><a href="http://github.com/issues">Issue</a></li>
             <li><a href="http://github.com/marketpalce">Marketpalce</a></li>
             <li><a href="http://github.com/explore">Explore</a></li>
         </ul>
-    <span class="imgs">
-        <img src="bell.jpg">
-        <img src="plus.jpg">
-        <img src="dropdown.jpg">
-        <img src="user.jpg">
-        <img src="dropdown.jpg">
-    </span>    
+        <ul class="imgs">
+            <li><img src="bell.jpg"></ul>
+            <li><img src="plus.jpg"></li>
+            <li><img src="dropdown.jpg"></li>
+            <li><img src="user.jpg"></li>
+            <li><img src="dropdown.jpg"></li>    
+        </ul>
+    </span>
     </div>
     </div>
 </div>
