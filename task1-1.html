@@ -15,10 +15,11 @@
         </div>
         <div class="ul">   
             <ul>
-                <li>Pull requests</li>
-                <li>Issues</li>
-                <li>Marketplace</li>
-                <li>Explore</li>
+                <li><a href="https://github.com/pulls">Pull requests</a>
+                </li>
+                <li><a href="https://github.com/issues">Issues</a></li>
+                <li><a href="https://github.com/marketplace">Marketplace</a></li>
+                <li><a href="https://github.com/explore">Explore</a></li>
             </ul>    
         </div>
         <div id="icon">
@@ -29,11 +30,19 @@
             <img src="dropdown.jpg">
         </div>
     </div>
+    <br>
     <input type="button" value="🌙" onclick="
-    document.querySelector('body').style.
-    backgroundColor='black';">
-    <input type="button" value="🍎" onclick="
-    document.querySelector('body').style.
-    backgroundColor='white';">
+    document.querySelector('body').style.backgroundColor='black';
+    let target = document.querySelector('body');
+    if(this.value === '🌙'){
+        target.style.backgroundColor='black';
+        target.style.color='white';
+        this.value='🍎';
+    } else {
+        target.style.backgroundColor='white';
+        target.style.color='black';
+        this.value='🌙';
+    }
+    ">
 </body>
 </html>
