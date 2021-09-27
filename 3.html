@@ -8,12 +8,19 @@
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
-<input type="button" value="night" onclick="
-document.querySelector('body').style.backgroundColor='black';
-document.querySelector('body').style.color='white';">
-<input type="button" value="day" onclick="
-document.querySelector('body').style.backgroundColor='white';
-document.querySelector('body').style.color='black';">
+  <input type="button" value="night" onclick="
+  let target =  document.querySelector('body');
+  if(this.value === 'night'){
+    target.style.backgroundColor='black';
+    target.style.color='white';
+    this.value='day';
+    }
+  else{
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    this.value = 'night';
+    }
+  ">
 
 <!-- HTML과 JavaScript는 모두 컴퓨터 언어이지만 JS만 컴퓨터 프로그래밍 언어이다.
 프로그램의 핵심은 일을 순차적으로 진행하는 것에 있다.
@@ -37,6 +44,20 @@ document.querySelector('body').style.color='black';">
   </p>
 </div>
 </div>
+<input type="button" value="night" onclick="
+let target = document.querySelector('body');
+if(this.value === 'night'){
+  target.style.backgroundColor='black';
+  target.style.color='white';
+  this.value='day';
+  }
+else{
+  target.style.backgroundColor='white';
+  target.style.color='black';
+  this.value = 'night';
+  }
+">
+<!-- onclick과 같이 이벤트가 실행되는 코드들 안에는 코드가 속해 있는 태그를 가르키도록 약속된 특수한 키워드(this)가 있다.  -->
 </body>
 </html>
 
