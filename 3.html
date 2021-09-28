@@ -5,33 +5,42 @@
   <meta charset="UTF-8">
   <link rel="stylesheet"
   href="style.css">
+  <script>
+function LinkSetColor(color){
+    let alist = document.querySelectorAll('a');
+    let i = 0;
+    while( i < alist.length){
+    alist[i].style.color = color;
+    i = i + 1;
+    }
+    }
+function BodysetColor(color){
+  document.querySelector('body').style.color = color;
+}
+function BodySetBackgroundColor(color){
+  document.querySelector('body').style.backgroundColor= color;
+}
+function nightDayHandler(self){
+          let target =  document.querySelector('body');
+      if(self.value === 'night'){
+        BodySetBackgroundColor('black');
+        BodysetColor('white');
+        self.value = 'day';
+LinkSetColor('powderblue');
+        }
+      else{
+        BodySetBackgroundColor('white');
+        BodysetColor('black');
+        self.value = 'night';
+LinkSetColor('blue');
+        }
+    }
+  </script>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
   <input type="button" value="night" onclick="
-  let target =  document.querySelector('body');
-  if(this.value === 'night'){
-    target.style.backgroundColor='black';
-    target.style.color='white';
-    this.value='day';
-    let alist = document.querySelectorAll('a');
-let i = 0;
-while( i < alist.length){
-alist[i].style.color = 'powderblue'
-i = i + 1;
-}
-    }
-  else{
-    target.style.backgroundColor='white';
-    target.style.color='black';
-    this.value = 'night';
-    let alist = document.querySelectorAll('a');
-let i = 0;
-while( i < alist.length){
-alist[i].style.color = 'blue'
-i = i + 1;
-}
-    }
+nightDayHandler(this);
   ">
 
 <!-- HTML과 JavaScript는 모두 컴퓨터 언어이지만 JS만 컴퓨터 프로그래밍 언어이다.
@@ -56,33 +65,6 @@ i = i + 1;
   </p>
 </div>
 </div>
-<input type="button" value="night" onclick="
-let target = document.querySelector('body');
-if(this.value === 'night'){
-  target.style.backgroundColor='black';
-  target.style.color='white';
-  this.value='day';
-  
-  let alist = document.querySelectorAll('a');
-let i = 0;
-while( i < alist.length){
-alist[i].style.color = 'powderblue'
-i = i + 1;
-}
-  }
-else{
-  target.style.backgroundColor='white';
-  target.style.color='black';
-  this.value = 'night';
-  
-  let alist = document.querySelectorAll('a');
-let i = 0;
-while( i < alist.length){
-alist[i].style.color = 'blue'
-i = i + 1;
-}
-  }
-">
 <!-- onclick과 같이 이벤트가 실행되는 코드들 안에는 코드가 속해 있는 태그를 가르키도록 약속된 특수한 키워드(this)가 있다.  -->
 </body>
 </html>
