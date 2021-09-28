@@ -5,43 +5,12 @@
   <meta charset="UTF-8">
   <link rel="stylesheet"
   href="style.css">
-  <script>
-function LinkSetColor(color){
-    let alist = document.querySelectorAll('a');
-    let i = 0;
-    while( i < alist.length){
-    alist[i].style.color = color;
-    i = i + 1;
-    }
-    }
-function BodysetColor(color){
-  document.querySelector('body').style.color = color;
-}
-function BodySetBackgroundColor(color){
-  document.querySelector('body').style.backgroundColor= color;
-}
-function nightDayHandler(self){
-          let target =  document.querySelector('body');
-      if(self.value === 'night'){
-        BodySetBackgroundColor('black');
-        BodysetColor('white');
-        self.value = 'day';
-LinkSetColor('powderblue');
-        }
-      else{
-        BodySetBackgroundColor('white');
-        BodysetColor('black');
-        self.value = 'night';
-LinkSetColor('blue');
-        }
-    }
-  </script>
+  <script src="colors.js"></script>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
   <input type="button" value="night" onclick="
-nightDayHandler(this);
-  ">
+nightDayHandler(this);">
 
 <!-- HTML과 JavaScript는 모두 컴퓨터 언어이지만 JS만 컴퓨터 프로그래밍 언어이다.
 프로그램의 핵심은 일을 순차적으로 진행하는 것에 있다.
