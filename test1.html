@@ -9,7 +9,7 @@
 <body>
     
 <script>
-
+/*
     let c = 1;
     let h = 2;
     let u = 3;
@@ -20,13 +20,34 @@
 let name = ['c','h','u','l','h','w','a','l','e','e'];
 
 function test (){
-if (console.log(name[9]) == 'e') {
+if (name[8] == 'e') {
     document.write('!!!')
 } else {
     document.write('일치하지 않습니다.');
 }
 }
 test();
+*/
+
+let c = 1;
+    let h = 2;
+    let u = 3;
+    let l = 4;
+    let w = 5;
+    let a = 6;
+    let e = 7;
+let name = ['c','h','u','l','h','w','a','l','e','e'];
+
+let ask = prompt('name[] 중 e는 몇 번째?', '');
+if (ask == '9' || ask == '10') {
+    alert ('!!!');
+} else if( ask == null ) {
+    alert('취소 되었습니다.');
+}
+else {
+    alert('일치하지 않습니다.');
+}
+
 </script>
 
 </body>
