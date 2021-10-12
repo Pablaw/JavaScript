@@ -9,7 +9,7 @@
 <body>
     <script>
 
-//     let indices = [];    
+// //     let indices = [];    
 const arr = [1,2,3,4,5,6,7,8,9];
 //     let element = 'a';
 //     let eArr = arr.values();
@@ -33,14 +33,30 @@ const arr = [1,2,3,4,5,6,7,8,9];
 // let avg = result / arr.length
 // document.write(avg);
 
-let a = 0;
-function fn1 () {
-  return a;
+function solution () {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++){
+        sum += arr[i];
+    }
+        return sum / arr.length;
 }
-console.log(a);
-fn1 ();
+solution();
+
+// let star = document.write('*');
+// let blank = document.write('\u00A0');
+// let br = document.write('<br>');
+// let arr = [star, blank, br];
 
 
+//star +2, br 1,3,5...다음,
+//blank curr-1, curr-2,...
+// function tree () {
+//   for(i = 0; i < 100; i++)
+// } 
+
+for(let i = 1; i <= 10; i = i + 2) {
+  console.log(' '.repeat( (10-i) / 2 ) + '*'.repeat(i) )
+}
 </script>
 
 
