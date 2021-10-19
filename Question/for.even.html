@@ -9,11 +9,29 @@
 <body>
     
     <script>
-        for( let i = 2; i <= 10; i++ ) {
-            if ( i % 2 == 0) { 
-            document.write(i);
+        // for( let i = 2; i <= 10; i++ ) {
+        //     if ( i % 2 == 0) { 
+        //     document.write(i);
+        //     }
+        // }
+
+        let n = prompt('숫자를 입력하세요', '');
+
+        for (let i = n; ; ) {  
+            if (i == null) {
+                alert('취소되었습니다.');
+                break;
+            } 
+            else if (i % 2 == 0) {
+                alert(`입력한 숫자(${n})가 짝수입니다.`);
+                break;
+            }
+            else {
+                alert(`입력한 숫자(${n})가 홀수입니다.`);
+                break;
             }
         }
+
 
     </script>
 </body>
