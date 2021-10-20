@@ -14,10 +14,10 @@
         //     document.write(i);
         //     }
         // }
-
-for ( i = 2; i <= 10; i++){
-    if ( i % 2 == 0) {
-        document.write(`2부터 10까지 숫자 중 짝수는 ${i}입니다.` + '<br>');
+let n = prompt('숫자를 입력해주세요.', '');
+for ( let i = 1; i <= n; i++) {
+    if( i % 2 == 0) {
+        document.write(`입력한 숫자(${n}) 보다 작거나 같은 짝수는 ${i}입니다.` + '<br>'); 
     }
 }
 
