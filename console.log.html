@@ -14,8 +14,10 @@
 //     console.log(' '.repeat( (10-i) / 2 ) + '*'.repeat(i));
 // }
 
-for(let i = 1; i <=20; i = i + 2) {
-    console.log(' '.repeat((20-i)/2) + '*'.repeat(i));
+let n = prompt('숫자를 입력하세요', '');
+
+for(let i = 1; i <= n; i = i + 2) {
+    console.log(' '.repeat((n-i)/2) + '*'.repeat(i));
 }
 
 
