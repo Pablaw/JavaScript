@@ -10,10 +10,16 @@
     <h3>console.log로 별 삼각형 만들기</h3>
     "콘솔 창으로 확인해보기"
 <script>
-for(let i = 1; i <= 10 ; i = i + 2) {
-    console.log(' '.repeat( (10-i) / 2 ) + '*'.repeat(i));
-    document.write(console.log(i))
+// for(let i = 1; i <= 10 ; i = i + 2) {
+//     console.log(' '.repeat( (10-i) / 2 ) + '*'.repeat(i));
+// }
+let n = prompt('숫자를 입력하세요.','');
+
+for (let i = 1; i <= n; i = i +2) {
+    console.log(' '.repeat((n-i)/2) + '*'.repeat(i));
 }
+
+
 </script>
 
     
