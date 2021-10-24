@@ -7,20 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h3>보다 작은 짝수, 콘솔창으로 확인</h3>
     <script>
         // for( let i = 2; i <= 10; i++ ) {
         //     if ( i % 2 == 0) { 
         //     document.write(i);
         //     }
         // }
-
-        for(i = 2; i <= 10; i++) {
-            if(i % 2 == 0) {
-                document.write(`2보다 크고 10보다 작은 짝수는
-                ${i}입니다.` +'<br>');
-            }
-        }
+        
+let n = prompt('숫자를 입력해주세요.', '')
+for ( let i = 1; i <= n; i++) {
+    if ( i % 2 == 0) {
+        console.log(i);
+    }
+}
 
     </script>
 </body>
