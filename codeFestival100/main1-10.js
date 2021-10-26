@@ -64,15 +64,23 @@ console.log(result);
 // concat() 메서드는 매개변수로 전달된 문자열을 메서드를 호출한 문자열에 붙여 새로운 문자열로 반환.
 // Q10. 별찍기
 // 입력 값: 5, 별찍기로 5단 트리만들기
-
-let n2 = 5;
-for(let j = 1; j <= n2; j++){
-    for( let k = n2; ; k--) {
-        console.log('*'.)
+// \n 줄바꿈
+ let n2 = 5;
+let tree = '';
+for(let i2 = 1; i2 <= n2; i2++) {
+    let star = '';
+    for(let j2 = 1; j2 <= n2 - i2; j2++) {
+        star += ' ';
     }
+    for(let k2 = 1; k2 <= 2 * i2 - 1; k2++) {
+        star += '*';
+    }
+    tree += star + '\n'
+} console.log(tree);
+
+let n3 = prompt('숫자를 입력하세요.', '');
+for (let i3 = 1; i3 <= n3; i3 += 2) {
+    console.log(' '.repeat( (n3-i3) / 2) + '*'.repeat(i3));
 }
 
-// for(let j = 1; j <= 10; j += 2){
-// console.log(' '.repeat((10-j)/2) + '*'.repeat(j));
-// }
 
