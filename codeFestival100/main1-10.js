@@ -36,7 +36,7 @@ console.log(a1 + b1);
 // NaN, 1, "", 0, undefined 중 Falthy가 아닌 것은? 1
 // null, undefined, 0, 빈 문자열, NaN, false를 제외한 것은 모두 truthy
 // Q7. 변수명으로 사용할 수 없는 것 X
-// age, &age, let, _age, 1age -> &age, let?
+// age, &age, let, _age, 1age -> &age, let? X -> let, 1age
 // JS 식별자는 문자, 밑줄(_), 달러기호($)로 시작해야 한다. let은 예약어로 사용불가.
 // Q8. 객체의 키 이름 중복 X
 // 78, 84? -> 중복 시 가장 나중(아래값)값이 출력 됨.
@@ -73,3 +73,4 @@ for(let j = 1; j <= n2; j++){
 // for(let j = 1; j <= 10; j += 2){
 // console.log(' '.repeat((10-j)/2) + '*'.repeat(j));
 // }
+
