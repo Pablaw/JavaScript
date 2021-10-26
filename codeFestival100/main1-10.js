@@ -67,7 +67,9 @@ console.log(result);
 
 let n2 = 5;
 for(let j = 1; j <= n2; j++){
-    
+    for( let k = n2; ; k--) {
+        console.log('*'.)
+    }
 }
 
 // for(let j = 1; j <= 10; j += 2){
