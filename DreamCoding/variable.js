@@ -3,17 +3,22 @@
 // use this for Vanila Javascript.
 'use strict';
 
-// 2. Variable
+// 2. Variable rw(read/write)
 // let (added in ES6)
 // global scope / block scope
 // var hoisting(move declaration from bottom to top)
 // variable declaration -> constant - immutable / let - mutable
 
-// 3.constant
+// 3.constant r(read)
+//Note!
+// Immutable data types: premitive types, frozen objects (i.e. object,freeze())
+// Mutuable data types: all objects by default are mutable in JS
+
 // favor immutable data type always for a few reasons:
 // - Security
 // - thread safety
 // - reduce human mistakes
+
 
 // 4. Variable types
 // primitive, single item: number, string, boolean, null, undefined, symbol
@@ -46,3 +51,10 @@ const gSymbol2 = Symbol.for('id');
 console.log(gSymbol1 === gSymbol2);
 // console.log(`${symbol1}`); -> error
 console.log(`${symbol1.description}`);
+// .description -> string
+
+// 5. Dynamic typing: dynamically typed language
+
+// object, real-life object, data structure
+const c = '2' + 0;
+console.log(`type: ${typeof c}, value: ${c}`);
