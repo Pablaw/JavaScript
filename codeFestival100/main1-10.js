@@ -72,7 +72,7 @@ for(let i2 = 1; i2 <= n2; i2++) {
     for(let j2 = 1; j2 <= n2 - i2; j2++) {
         star += ' ';
     }
-    for(let k2 = 1; k2 <= 2 * i2 - 1; k2++) {
+    for(let k2 = 1; k2 <= i2 * 2 - 1; k2++) {
         star += '*';
     }
     tree += star + '\n'
