@@ -39,8 +39,22 @@
 // let n3 = prompt('단어를 입력하세요.', '');
 // const reverse = n3.split('').reverse().join('');
 // console.log(reverse);
-//Q.17 놀이기구 키 제한
-let n4 = prompt('키(cm)를 입력해주세요.','');
-n4 >= 150 ? console.log('YES') : console.log('NO');
+// //Q.17 놀이기구 키 제한
+// let n4 = prompt('키(cm)를 입력해주세요.','');
+// n4 >= 150 ? console.log('YES') : console.log('NO');
+// Q.18 평균점수 
+// let n = [20, 30, 40];
+// let sum = 0;
+// let i;
+// for(i=0; i < n.length; i++){
+//       sum = sum + n[i]
+// }
+// console.log(sum/n.length);
+let n =prompt('세 과목의 점수를 공백으로 구분해서 입력하세요.','').split(' ');
+let sum = 0;
+for(let i = 0; i < n.length; i++){
+    sum += +n[i];
+} console.log(Math.floor(sum/n.length));
+
 
 
