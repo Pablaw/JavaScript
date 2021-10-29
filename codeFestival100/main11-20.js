@@ -50,11 +50,23 @@
 //       sum = sum + n[i]
 // }
 // console.log(sum/n.length);
-let n =prompt('세 과목의 점수를 공백으로 구분해서 입력하세요.','').split(' ');
-let sum = 0;
-for(let i = 0; i < n.length; i++){
-    sum += +n[i];
-} console.log(Math.floor(sum/n.length));
+// let n =prompt('세 과목의 점수를 공백으로 구분해서 입력하세요.','').split(' ');
+// let sum = 0;
+// for(let i = 0; i < n.length; i++){
+//     sum += +n[i];
+// } console.log(Math.floor(sum/n.length));
+// //Q.19 제곱을 구하자
+// let n = prompt('공백으로 구분하여 a의 b승의 a, b를 입력하세요.','').split(' ');
+// let answer = n[0] ** n[1];
+// console.log(answer);
+//Q20. 몫과 나머지
+let n = prompt('두 숫자를 공백으로 구분하여 입력하세요.', '').split(' ');
+let result = Math.floor(n[0] / n[1]);
+let left = n[0] % n[1];
+console.log(`${result} ${left}`);
+
+// console.log(Math.floor(n[0]/n[1]) + ' ' + (n[0] % n[1]));
+
 
 
 
