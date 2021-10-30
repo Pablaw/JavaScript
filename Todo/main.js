@@ -11,6 +11,7 @@ btn.addEventListener('click', function event() {
     newDiv.innerText = inputValue;
     let toDoContent = document.querySelector('#toDoContent')
     toDoContent.prepend(newDiv)
+    input.value = ''
     // document.toDoContent.prepend(newDiv);
     } 
 ) 
