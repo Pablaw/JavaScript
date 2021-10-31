@@ -13,6 +13,12 @@
 // console.log(upper);
 //Q25. 원의 넓이 구하기.
 // 원의 넓이 = 반지름 * 반지름 * 3.14
-let n = prompt('숫자 정수를 입력해주세요.','');
-let area = (n ** n) * 3.14;
-console.log(area);
+// let n = prompt('숫자 정수를 입력해주세요.','');
+// let area = (n * n) * 3.14;
+// console.log(area);
+function circle(n) {
+    const result = n * n * 3.14
+    return result;
+}
+const r = prompt('반지름을 입력하세요.', '');
+console.log(circle(r));
