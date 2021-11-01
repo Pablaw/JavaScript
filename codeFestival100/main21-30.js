@@ -54,7 +54,21 @@
 //     console.log(str[i], str[i+1]);
 // }
 //Q29. 대문자 구분하기
-let chr = prompt('알파벳을 하나만 입력해주세요.', '');
-if(chr === chr.toUpperCase()) {
-    console.log('YES')
-} else { console.log('NO')};
+// let chr = prompt('알파벳을 하나만 입력해주세요.', '');
+// if(chr === chr.toUpperCase()) {
+//     console.log('YES')
+// } else { console.log('NO')};
+//Q30. 문자열 속 문자 찾기
+const str = prompt('문자열을 입력해주세요.','').slice();
+const find = prompt('찾을 문자를 입력해주세요.','').slice();
+let answer = '';
+for( let i = 0; i <= str.length; i++){
+if ( str[i] === find[0]) {
+        if (str[i + 1] === find[1]) {
+            if(str[i + 2] === find[2]){
+                answer = console.log(i);
+            }
+        }
+    }
+}
+console.log(str.indexOf(find));
