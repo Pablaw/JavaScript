@@ -43,10 +43,18 @@
 //     obj[name[i]] = +point[i]
 // }
 // console.log(obj);
+//Q28. 2-gram
+// let str = prompt('문자를 입력하세요.', '').slice();
+// for(let i = 0; i <= str.length - 2; i++) {
+//     console.log(str[i] + str[i+1]);
+// }
+
 // let str = prompt('문자를 입력하세요.', '');
-// for (let i=0; i < str.length-1; i++) {
+// for(let i=0; i < str.length - 1; i++) {
 //     console.log(str[i], str[i+1]);
 // }
-let n = prompt('숫자를 입력하세요.', '');
-for (let i = 1; i <= n; i = i + 2)
-console.log(' '.repeat((n-i) / 2) + '*'.repeat(i));
+//Q29. 대문자 구분하기
+let chr = prompt('알파벳을 하나만 입력해주세요.', '');
+if(chr === chr.toUpperCase()) {
+    console.log('YES')
+} else { console.log('NO')};
