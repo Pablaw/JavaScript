@@ -23,15 +23,23 @@
 // let r = prompt('원을 반지름을 입력하세요.', '');
 // console.log(circle(r));
 //Q26. 행성문제2
-const planets = {
-    '수성' : 'Mecury',
-    '금성' : 'Venus',
-    '지구' : 'Earth',
-    '화성' : 'Mars',
-    '목성' : 'Jupiter',
-    '토성' : 'Saturn',
-    '천왕성' : 'Uranus',
-    '해왕성' : 'Neptune'
-};
-let name = prompt('행성이름을 한글로 입력하세요.','');
-console.log(planets[name]);
+// const planets = {
+//     '수성' : 'Mecury',
+//     '금성' : 'Venus',
+//     '지구' : 'Earth',
+//     '화성' : 'Mars',
+//     '목성' : 'Jupiter',
+//     '토성' : 'Saturn',
+//     '천왕성' : 'Uranus',
+//     '해왕성' : 'Neptune'
+// };
+// let name = prompt('행성이름을 한글로 입력하세요.','');
+// console.log(planets[name]);
+//Q27.객체 만들기
+// const name = prompt('이름(영문)을 입력하세요.', '').split(' ');
+// const point = prompt('점수를 입력하세요.', '').split(' ');
+// const obj = {};
+// for (let i=0; i<name.length; i++) {
+//     obj[name[i]] = +point[i]
+// }
+// console.log(obj);
