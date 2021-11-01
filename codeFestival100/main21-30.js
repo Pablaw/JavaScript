@@ -16,9 +16,22 @@
 // let n = prompt('숫자 정수를 입력해주세요.','');
 // let area = (n * n) * 3.14;
 // console.log(area);
-function circle(n) {
-    const result = n * n * 3.14
-    return result;
-}
-const r = prompt('반지름을 입력하세요.', '');
-console.log(circle(r));
+// function circle(n) {
+//     let result = n * n * 3.14;
+//     return result;
+// }
+// let r = prompt('원을 반지름을 입력하세요.', '');
+// console.log(circle(r));
+//Q26. 행성문제2
+const planets = {
+    '수성' : 'Mecury',
+    '금성' : 'Venus',
+    '지구' : 'Earth',
+    '화성' : 'Mars',
+    '목성' : 'Jupiter',
+    '토성' : 'Saturn',
+    '천왕성' : 'Uranus',
+    '해왕성' : 'Neptune'
+};
+let name = prompt('행성이름을 한글로 입력하세요.','');
+console.log(planets[name]);
