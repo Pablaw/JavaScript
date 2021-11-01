@@ -43,3 +43,10 @@
 //     obj[name[i]] = +point[i]
 // }
 // console.log(obj);
+// let str = prompt('문자를 입력하세요.', '');
+// for (let i=0; i < str.length-1; i++) {
+//     console.log(str[i], str[i+1]);
+// }
+let n = prompt('숫자를 입력하세요.', '');
+for (let i = 1; i <= n; i = i + 2)
+console.log(' '.repeat((n-i) / 2) + '*'.repeat(i));
