@@ -57,9 +57,38 @@
 //                 answer = n1.concat(arr).join(' ');
 //                 }   
 // console.log(answer);
-let num = prompt('1~9까지 숫자를 입력하세요.', '');
-let result = '';
-for(let i=1; i<=9; i++){
-    result += num * i + ' ';
-}
-console.log(result);
+// let num = prompt('1~9까지 숫자를 입력하세요.', '');
+// let result = '';
+// for(let i=1; i<=9; i++){
+//     result += num * i + ' ';
+// }
+// console.log(result);
+//Q37. 반장 선거
+// let name = prompt('이름을 입력해주세요.', '').split(' ');
+// let result = 0;
+// let select = '';
+// for(let i=0; i <= name.length; i++){
+//     if(name[i] === '혜원') {
+//         result += 1;
+//     }
+// }
+// console.log(`혜원(이)가 총 ${result}표로 반장이 되었습니다.`);
+// const array = prompt('이름을 입력해주세요.').split(' ');
+// let result = {};
+// let winner = "";
+
+// for(let index in array){
+//   let val = array[index];
+//   result[val] = result[val] === undefined ? 1 : result[val] = result[val] + 1;
+// }
+
+// winner = Object.keys(result).reduce(function(a, b){
+//   return result[a] > result[b] ? a : b
+// });
+
+// console.log(`${winner}(이)가 총 ${result[winner]}표로 반장이 되었습니다.`);
+
+//Q38. 사탕 나누기
+let point = prompt('점수를 공백으로 구분하여 입력하세요.', '').split(' ');
+
+console.log(point);
