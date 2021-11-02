@@ -30,19 +30,36 @@
 // }
 //Q35. Factory 함수 사용하기
 // /2제곱, 3제곱, 4제곱을 할 수 있는 Factory 함수를 만들려고 합니다.
-function one(n){
-    function two(value){
-        const sq = Math.pow(value, n);
-        return sq;
-    }
-    return two;
+// function one(n){
+//     function two(value){
+//         const sq = Math.pow(value, n);
+//         return sq;
+//     }
+//     return two;
+// }
+
+// const a = one(2);
+// const b = one(3);
+// const c = one(4);
+
+// console.log(a(10));
+// console.log(b(10));
+// console.log(c(10));
+//Q36. 구구단 출력하기
+// let n = prompt('1~9까지 숫자를 입력하세요.','').split();
+// let n1 = [+n[0]];
+// let arr = [n1*2, n[0]*3, n[0]*4, n[0]*5, n[0]*6, n[0]*7, n[0]*8, n[0]*9];
+// let answer = '';
+//     if(n > 9) {
+//     alert('숫자가 잘못되었습니다.');
+//     n = '';
+//             } else {
+//                 answer = n1.concat(arr).join(' ');
+//                 }   
+// console.log(answer);
+let num = prompt('1~9까지 숫자를 입력하세요.', '');
+let result = '';
+for(let i=1; i<=9; i++){
+    result += num * i + ' ';
 }
-
-const a = one(2);
-const b = one(3);
-const c = one(4);
-
-console.log(a(10));
-console.log(b(10));
-console.log(c(10));
-
+console.log(result);
