@@ -90,5 +90,21 @@
 
 //Q38. 사탕 나누기
 let point = prompt('점수를 공백으로 구분하여 입력하세요.', '').split(' ');
+//point.sort();
 
-console.log(point);
+point.map(function(n) { return parseInt(n, 10);});
+point.sort((a, b) => { return a-b;});
+
+let arr = [];
+let count = 0;
+
+while(arr.length < 3) {
+    let num = point.pop();
+    if(!arr.includes(num)) {
+        arr.push(num);
+    } {
+        count += 1;
+    }
+}
+console.log(count);
+// .pop() / .includes() / push() / map(){} / sort(){} 
