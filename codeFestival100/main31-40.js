@@ -89,6 +89,7 @@
 // console.log(`${winner}(이)가 총 ${result[winner]}표로 반장이 되었습니다.`);
 
 //Q38. 사탕 나누기
+/*
 const score = prompt('성적을 공백으로 구분해서 입력하세요.', '').split(' ');
 //score.map(function(n) { return parseInt(n, 10);});
 score.sort((a, b) => { return a - b;});
@@ -104,4 +105,24 @@ while(arr.length < 3) {
         count += 1;
 }
 console.log(count);
+*/
 // .pop() / .includes() / push() / map(){} / sort(){} 
+//Q39. 오타 수정하기
+//const str = prompt('영어로 된 문장을 입력하세요.', '' );
+//const regex = /q/ig;
+//console.log(str.replaceAll(regex, 'e'));
+//console.log(str.replaceAll('q', 'e'));
+
+//Q40. 놀이동산 탑승인원
+const limit = prompt('제한 중량을 입력하세요.','');
+const person = prompt('동행한 인원 수를 입력하세요.','');
+
+let count = 0;
+let sum = 0;
+
+for( let i=1; i <= person; i++) {
+    sum += +prompt('무게를 입력해주세요.',''); 
+    if(sum <= limit) {
+        count = i;
+    }
+} console.log(count);
