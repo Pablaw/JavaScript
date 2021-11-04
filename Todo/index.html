@@ -1,26 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script defer src="main.js"></script>
-</head>
-<body>
-    <input class="todo_input" type="text">
-    <button class="todo_btn" type="button">Click!</button>
-    <div id="toDoCont"></div>
-</body>
-</html>
+
+
 <!-- psuedo code
-1. html에 요소(버튼, 입력 텍스트, 컨텐트)태그 만들기
-2. 요소별 class 지정하기
+1. html에 요소 (입력텍스트, 버튼, 컨텐트)태그 만들기
+input, button, div
+2. 각 요소별로 class 지정하기
 3. js 선언과 html 요소 연결하기
-4. js 함수 
-4-1. 클릭이벤트 함수 만들기
-     - 새로운 값을 입력해서 div 태그 만들기
-4-2. js에서 html 새로운 요소 div 생성하기 - 요소에 값 입력
-4-3. js로 선언하여 생성하는 새로운 div를 컨텐트 내에 생성하기
-4-4. input 값 초기화하기
--->
+4. js 함수 만들기
+4-1. 클릭이벤트 함수 만들기 addEventListener
+4-2. 실행되는 함수 만들기 toDoList
+     a. 입력값 가져오기 input value
+     b. 입력값으로 새로운 div 태그 만들기
+     c. edit, del, checkBox 버튼 js로 만들기
+4-3. toDoList 함수 내에서 생성되는 태그에 값 입력 (모양만들기)
+    a. 생성되는 div 태그에 입력값 추가하기
+    b. 생성되는 edit, del, checkBox 버튼들에 내용 입력해서 모양 만들기
+    c. 생성되는 div에 edit, del, checkBox버튼 추가하기 append
+    d. 생성된 div 컨텐트 태그에 넣기 prepend
+
+4-4. 입력값 초기화 하기 input value -> 메모리, 레퍼런스 고려 -->
+
+     
