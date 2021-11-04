@@ -114,15 +114,26 @@ console.log(count);
 //console.log(str.replaceAll('q', 'e'));
 
 //Q40. 놀이동산 탑승인원
-const limit = prompt('제한 중량을 입력하세요.','');
-const person = prompt('동행한 인원 수를 입력하세요.','');
+// const limit = prompt('제한 중량을 입력하세요.','');
+// const person = prompt('동행한 인원 수를 입력하세요.','');
 
-let count = 0;
+// let count = 0;
+// let sum = 0;
+
+// for( let i=1; i <= person; i++) {
+//     sum += +prompt('무게를 입력해주세요.',''); 
+//     if(sum <= limit) {
+//         count = i;
+//     }
+// } console.log(count);
+const limit = 50;
+const n = prompt('인원 수를 입력하세요', '');
 let sum = 0;
-
-for( let i=1; i <= person; i++) {
-    sum += +prompt('무게를 입력해주세요.',''); 
-    if(sum <= limit) {
+let count = 0;
+for(let i=1; i<=n; i++){
+    sum += +prompt('몸무게를 입력하세요', '');
+    if(sum<=limit){
         count = i;
     }
-} console.log(count);
+}
+console.log(count);
