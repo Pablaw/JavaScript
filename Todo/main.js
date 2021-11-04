@@ -1,19 +1,15 @@
-const btn = document.querySelector('.todo_btn');
-const input = document.querySelector('.todo_input');
-const body = document.querySelector('body');
+'use strict';
 
-let inputValue;
+const input = document.querySelector(".todo_input");
+const btn = document.querySelector(".todo_btn");
+const ctn = document.querySelector("#toDoCont");
 
+btn.addEventListener('click', toDoList);
 
-btn.addEventListener('click', function event() {
-    inputValue = input.value;
+function toDoList () {
+    let inputValue = input.value;
     let newDiv = document.createElement("div");
     newDiv.innerText = inputValue;
-    let toDoContent = document.querySelector('#toDoContent')
-    toDoContent.prepend(newDiv)
-    input.value = ''
-    // document.toDoContent.prepend(newDiv);
-    } 
-) 
-
-
+    ctn.prepend(newDiv);
+    input.value = '';
+}
