@@ -7,14 +7,11 @@ const a = prompt('숫자를 입력하세요.', '');
 const b = prompt('숫자를 입력하세요.', '');
 const command = prompt('영문으로 연산자를 입력하세요.','');
 
-function add(a, b) {
-    return a + b;
-}
-function substract(a, b) {
-    return a - b;
-}
 
-console.log(command(a, b));
+let add = (a, b) => a + b;
+
+
+console.log(command);
 
 
 
