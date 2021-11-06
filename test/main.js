@@ -11,7 +11,7 @@ let n = 0;
 
 function downClick () {
     if (n > 0) {
-        n -= 1
+        n--;
         display.value = n;
     } else {
         n = 0;
@@ -19,6 +19,6 @@ function downClick () {
 }
 
 function upClick () {
-        n += 1;
+        n++;
         display.value = n;
     }
