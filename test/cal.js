@@ -50,20 +50,11 @@ function resultValue () {
 } 
 
 function addFn () {
-    let sum = '';
-
-        for(let j=0; j < lastArr.length; j++) {
-            answer += +lastArr[j] + +arr[0];
-            console.log(answer);
-        }
-
-        for(let i=0; i < arr.length; i++) {
-        sum += arr[i];
-        }
-        lastArr.push(sum);
-        arr = [];
-        n = '';
-        display.value = '';
+    let arrSum = 0;
+    for(let i=0; i < arr.length; i++){
+        arrSum += arr[i];
+    }
+    console.log(arrSum);
 } //arr에 넣어서 한번에 더하기 (for)
 
 function clear () {
