@@ -17,7 +17,7 @@ const num7 = document.querySelector('.num7Btn');
 const num8 = document.querySelector('.num8Btn');
 const num9 = document.querySelector('.num9Btn');
 const num0 = document.querySelector('.num0Btn');
-
+//all 
 const display = document.querySelector('.displayBtn');
 
 const inputValue = display.value;
@@ -43,7 +43,6 @@ add.addEventListener('click', addFn);
 result.addEventListener('click', resultValue);
 
 function resultValue () {
-    let answer = +arr.pop() + +n;
     display.value = answer;
 }
 
@@ -51,7 +50,7 @@ function addFn () {
     arr.push(n);
     n = '';
     display.value = n;
-}
+} // 배열 모두 더하기 (for)
 
 function clear () {
     n = '';
