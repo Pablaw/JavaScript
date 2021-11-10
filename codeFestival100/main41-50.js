@@ -51,3 +51,9 @@
 //     return day[x.getDay()];
 // }
 // console.log(solution(month, date));
+// Q43. 10진수를 2진수로
+const num = prompt('숫자를 입력해주세요.', '');
+let convertNum = parseInt(num, 10);
+let answer = convertNum.toString(2);
+
+console.log(answer);
