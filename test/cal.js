@@ -25,6 +25,8 @@ const inputValue = display.value;
 let n = '';
 
 let arr = [];
+let lastArr = [];
+let answer = 0;
 
 num1.addEventListener('click', num1Value);
 num2.addEventListener('click', num2Value);
@@ -42,59 +44,82 @@ add.addEventListener('click', addFn);
 
 result.addEventListener('click', resultValue);
 
+
 function resultValue () {
     display.value = answer;
-}
+} 
 
 function addFn () {
+
     arr.push(n);
     n = '';
     display.value = n;
 } // 배열 모두 더하기 (for)
 
+    let arrSum = 0;
+    for(let i=0; i < arr.length; i++){
+        arrSum += arr[i];
+    }
+    console.log(arrSum);
+ //arr에 넣어서 한번에 더하기 (for)
+
+
 function clear () {
     n = '';
+    answer = 0;
+    arr = [];
+    lastArr = [];
     display.value = n;
 }
 
 function num1Value () {
-    n += '1';
+    arr.push('1');
+    n += 1;
     display.value = n;
 }
 function num2Value () {
-    n += '2';
+    arr.push('2');
+    n += 2;
     display.value = n;
 }
 function num3Value () {
-    n += '3';
+    arr.push('3');
+    n += 3;
     display.value = n;
 }
 function num4Value () {
-    n += '4';
+    arr.push('4');
+    n += 4;
     display.value = n;
 }
 function num5Value () {
-    n += '5';
+    arr.push('5');
+    n += 5;
     display.value = n;
 }
 function num6Value () {
-    n += '6';
+    arr.push('6');
+    n += 6;
     display.value = n;
 }
 function num7Value () {
-    n += '7';
+    arr.push('7');
+    n += 7;
     display.value = n;
 }
 function num8Value () {
-    n += '8';
+    arr.push('8');
+    n += 8;
     display.value = n;
 }
 function num9Value () {
-    n += '9';
+    arr.push('9');
+    n += 9;
     display.value = n;
 }
 function num0Value () {
-    n += '0';
+    arr.push('0');
+    n += 0;
     display.value = n;
 }
 
