@@ -76,18 +76,19 @@
 
 // console.log(sum);
 
-let a = prompt('10진수를 입력해주세요.')
-let b = [];
-let result = '';
+// Q45. getTime()함수 사용하기
+const now = Date.now(); // 1970 1월 1일부터 millis(1000분의 1초)단위로 누적된 수
+const secondInt = now / 1000;
+const minutes = secondInt / 60;
+const hour = minutes / 60;
+const day = hour / 24;
+const year = Math.floor(day / 365);
+const nowYear = year + 1970;
 
-while (a){
-	b.push(a % 2);
-	a = parseInt(a / 2, 10);
-}
-b.reverse();
+console.log(nowYear);
 
-b.forEach((n) => {
-  result += n;
-})
 
-console.log(result);
+// const now = new Date();
+// let year = now.getTime();
+// year = Math.floor(year / (1000 * 60 * 60 * 24 * 365)) + 1970;
+// console.log(year);
