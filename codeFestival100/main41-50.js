@@ -12,31 +12,42 @@
 // } else {console.log('YES')}
 
 // Q42. 2020년 요일 세기
-const a = prompt('몇 월인지 입력하세요.', '');
-const b = prompt('몇 일인지 입력하세요.', '');
-// 31 29(28) 31 30 31 30 31 31 30 31 30 31
+// const a = prompt('몇 월인지 입력하세요.', '');
+// const b = prompt('몇 일인지 입력하세요.', '');
+// // 31 29(28) 31 30 31 30 31 31 30 31 30 31
 
-let arrMonth = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-let day = 0;
+// let arrMonth = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+// let day = 0;
 
-for(let i=0; i < a-1; i++) {
-    day += +arrMonth[i];
-}
+// for(let i=0; i < a-1; i++) {
+//     day += +arrMonth[i];
+// }
 
-day = day + +b;
+// day = day + +b;
 
-if(day % 7 === 1) {
-    console.log('WED')
-} else if (day % 7 === 2) {
-    console.log('THU')
-} else if (day % 7 === 3) {
-    console.log('FRI')
-} else if (day % 7 === 4) {
-    console.log('SAT')
-} else if (day % 7 === 5) {
-    console.log('SUN')
-} else if (day % 7 === 6) {
-    console.log('MON')
-} else {
-    console.log('TUE')
-}
+// if(day % 7 === 1) {
+//     console.log('WED')
+// } else if (day % 7 === 2) {
+//     console.log('THU')
+// } else if (day % 7 === 3) {
+//     console.log('FRI')
+// } else if (day % 7 === 4) {
+//     console.log('SAT')
+// } else if (day % 7 === 5) {
+//     console.log('SUN')
+// } else if (day % 7 === 6) {
+//     console.log('MON')
+// } else {
+//     console.log('TUE')
+// }
+
+// const month = prompt('월을 입력하세요.', '');
+// const date = prompt('일을 입력하세요', '');
+
+// function solution(a,b) {
+//     const day = ['SUN','MON','TUE','WED','THU','FRI','SAT'];
+    
+//     const x = new Date('2020'+'-'+a+'-'+b);
+//     return day[x.getDay()];
+// }
+// console.log(solution(month, date));
