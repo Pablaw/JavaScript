@@ -17,5 +17,26 @@ const b = prompt('몇 일인지 입력하세요.', '');
 // 31 29(28) 31 30 31 30 31 31 30 31 30 31
 
 let arrMonth = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+let day = 0;
 
+for(let i=0; i < a; i++) {
+    day += +arrMonth[i];
+}
 
+day = day + +b;
+
+if(day % 7 === 1) {
+    console.log('WED')
+} else if (day % 7 === 2) {
+    console.log('THU')
+} else if (day % 7 === 3) {
+    console.log('FRI')
+} else if (day % 7 === 4) {
+    console.log('SAT')
+} else if (day % 7 === 5) {
+    console.log('SUN')
+} else if (day % 7 === 6) {
+    console.log('MON')
+} else {
+    console.log('TUE')
+}
