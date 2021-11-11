@@ -77,18 +77,49 @@
 // console.log(sum);
 
 // Q45. getTime()함수 사용하기
-const now = Date.now(); // 1970 1월 1일부터 millis(1000분의 1초)단위로 누적된 수
-const secondInt = now / 1000;
-const minutes = secondInt / 60;
-const hour = minutes / 60;
-const day = hour / 24;
-const year = Math.floor(day / 365);
-const nowYear = year + 1970;
+// const now = Date.now(); // 1970 1월 1일부터 millis(1000분의 1초)단위로 누적된 수
+// const secondInt = now / 1000;
+// const minutes = secondInt / 60;
+// const hour = minutes / 60;
+// const day = hour / 24;
+// const year = Math.floor(day / 365);
+// const nowYear = year + 1970;
 
-console.log(nowYear);
+// console.log(nowYear);
 
 
 // const now = new Date();
 // let year = now.getTime();
 // year = Math.floor(year / (1000 * 60 * 60 * 24 * 365)) + 1970;
 // console.log(year);
+
+// Q46. 각 자리수의 합 2
+const startNum = prompt('1~20까지 중 시작 숫자를 입력하세요', '');
+const endNum = prompt('1~20까지 중 끝 숫자를 입력하세요', '');
+let strSum = '';
+for(let i = startNum; i <= endNum; i++){
+    strSum += i;
+}
+
+strSum.split('');
+let numSum = 0;
+for (let j=0; j < strSum.length; j++){
+    numSum += Number(strSum[j]);
+}
+console.log(numSum);
+
+// let arr = [];
+// let sum = 0;
+
+// for (let i=0; i<20; i++){
+//   arr[i] = i+1;
+// }
+
+// arr.forEach((n) => {
+//   while(n !== 0){
+//     sum += (n % 10);
+//     n = Math.floor(n/10);
+//   }
+// })
+
+// console.log(sum);
