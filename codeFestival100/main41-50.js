@@ -75,4 +75,96 @@
 // }
 
 // console.log(sum);
+<<<<<<< HEAD
 //Q44. 각 자리수의 합
+=======
+
+// Q45. getTime()함수 사용하기
+// const now = Date.now(); // 1970 1월 1일부터 millis(1000분의 1초)단위로 누적된 수
+// const secondInt = now / 1000;
+// const minutes = secondInt / 60;
+// const hour = minutes / 60;
+// const day = hour / 24;
+// const year = Math.floor(day / 365);
+// const nowYear = year + 1970;
+
+// console.log(nowYear);
+
+
+// const now = new Date();
+// let year = now.getTime();
+// year = Math.floor(year / (1000 * 60 * 60 * 24 * 365)) + 1970;
+// console.log(year);
+
+// Q46. 각 자리수의 합 2
+// const startNum = prompt('1~20까지 중 시작 숫자를 입력하세요', '');
+// const endNum = prompt('1~20까지 중 끝 숫자를 입력하세요', '');
+// let strSum = '';
+// for(let i = startNum; i <= endNum; i++){
+//     strSum += i;
+// }
+
+// strSum.split('');
+// let numSum = 0;
+// for (let j=0; j < strSum.length; j++){
+//     numSum += Number(strSum[j]);
+// }
+// console.log(numSum);
+
+// let arr = [];
+// let sum = 0;
+
+// for (let i=0; i<20; i++){
+//   arr[i] = i+1;
+// }
+
+// arr.forEach((n) => {
+//   while(n !== 0){
+//     sum += (n % 10);
+//     n = Math.floor(n/10);
+//   }
+// })
+
+// console.log(sum);
+
+//Q47. set 자료형의 응용
+// const people = {
+//     이호준: "01050442903",
+//     이호상: "01051442904",
+//     이준호: "01050342904",
+//     이호준: "01050442903",
+//     이준: "01050412904",
+//     이호: "01050443904",
+//     이호준: "01050442903"
+//   };
+// let result = new Set();
+// for (let p1 in people) {
+//     result.add(people[p1]);
+// }
+// console.log(result.size);
+
+// let nameSet = new Set([Object.values(people)]);
+// let setName = nameSet.values();
+// let setValues = setName.next().value;
+// console.log(setValues.length);
+// Q48. 대소문자 바꿔서 출력하기
+const input = 'AAABBBcccddd';
+const arr = [];
+const result = '';
+let inputSplit = input.split('');
+
+for(let i=0; i < inputSplit.length; i++) {
+    if(inputSplit[i] === inputSplit[i].toUpperCase()){
+        let lower = '';
+        lower = inputSplit[i].toLowerCase();
+        arr.push(lower);
+    } else {
+        let upper = '';
+        upper = inputSplit[i].toUpperCase();
+        arr.push(upper);
+    }    
+}
+for (let j=0; j < arr.length; j++){
+    
+}
+>>>>>>> 6f5ac72af327ab73bc971ee3cde360fbbc3c832c
