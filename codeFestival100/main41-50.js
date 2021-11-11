@@ -125,22 +125,42 @@
 // console.log(sum);
 
 //Q47. set 자료형의 응용
-const people = {
-    이호준: "01050442903",
-    이호상: "01051442904",
-    이준호: "01050342904",
-    이호준: "01050442903",
-    이준: "01050412904",
-    이호: "01050443904",
-    이호준: "01050442903"
-  };
+// const people = {
+//     이호준: "01050442903",
+//     이호상: "01051442904",
+//     이준호: "01050342904",
+//     이호준: "01050442903",
+//     이준: "01050412904",
+//     이호: "01050443904",
+//     이호준: "01050442903"
+//   };
 // let result = new Set();
 // for (let p1 in people) {
 //     result.add(people[p1]);
 // }
 // console.log(result.size);
 
-let nameSet = new Set([Object.values(people)]);
-let setName = nameSet.values();
-let setValues = setName.next().value;
-console.log(setValues.length);
+// let nameSet = new Set([Object.values(people)]);
+// let setName = nameSet.values();
+// let setValues = setName.next().value;
+// console.log(setValues.length);
+// Q48. 대소문자 바꿔서 출력하기
+const input = 'AAABBBcccddd';
+const arr = [];
+const result = '';
+let inputSplit = input.split('');
+
+for(let i=0; i < inputSplit.length; i++) {
+    if(inputSplit[i] === inputSplit[i].toUpperCase()){
+        let lower = '';
+        lower = inputSplit[i].toLowerCase();
+        arr.push(lower);
+    } else {
+        let upper = '';
+        upper = inputSplit[i].toUpperCase();
+        arr.push(upper);
+    }    
+}
+for (let j=0; j < arr.length; j++){
+    
+}
