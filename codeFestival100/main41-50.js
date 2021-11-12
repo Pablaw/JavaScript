@@ -171,9 +171,31 @@
 // const numArr = num.split(' '); // ...n 배열 요소 값 가져오기
 // console.log(Math.max(...numArr));
 
-let num = prompt('숫자를 공백으로 구분해서 입력하세요.', '').split(' ').map((n) => { return parseInt(n, 10);})
+// let num = prompt('숫자를 공백으로 구분해서 입력하세요.', '').split(' ').map((n) => { return parseInt(n, 10);})
 
-num.sort((a,b) => {
-    return a - b;
-});
-console.log(num[num.length - 1]);
+// num.sort((a,b) => {
+//     return a - b;
+// });
+// console.log(num[num.length - 1]);
+
+// Q50. 버블정렬 구현하기
+function bubble(arr) {
+    let result = arr.slice(); 
+  
+    for (let i = 0; i < result.length - 1; i++) {
+      for (let j = 0; j < result.length - i; j++) {
+        if (result[j] > result[j + 1]) {
+           let temp = result[j];
+           result[j] = result[j + 1];
+           result[j + 1] = temp;
+        }
+      }
+    }
+    return result;
+  }
+  
+  const items = prompt('입력해주세요.').split(' ').map((n) => {
+    return parseInt(n, 10);
+  });
+  
+  console.log(bubble(items));
