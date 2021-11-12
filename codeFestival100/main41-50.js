@@ -75,9 +75,6 @@
 // }
 
 // console.log(sum);
-<<<<<<< HEAD
-//Q44. 각 자리수의 합
-=======
 
 // Q45. getTime()함수 사용하기
 // const now = Date.now(); // 1970 1월 1일부터 millis(1000분의 1초)단위로 누적된 수
@@ -148,23 +145,35 @@
 // let setValues = setName.next().value;
 // console.log(setValues.length);
 // Q48. 대소문자 바꿔서 출력하기
-const input = 'AAABBBcccddd';
-const arr = [];
-const result = '';
-let inputSplit = input.split('');
+// const input = prompt('문자열을 입력하세요', ''); //'AAABBBcccddd';
+// const arr = [];
+// let result = '';
+// let inputSplit = input.split('');
 
-for(let i=0; i < inputSplit.length; i++) {
-    if(inputSplit[i] === inputSplit[i].toUpperCase()){
-        let lower = '';
-        lower = inputSplit[i].toLowerCase();
-        arr.push(lower);
-    } else {
-        let upper = '';
-        upper = inputSplit[i].toUpperCase();
-        arr.push(upper);
-    }    
-}
-for (let j=0; j < arr.length; j++){
-    
-}
->>>>>>> 6f5ac72af327ab73bc971ee3cde360fbbc3c832c
+// for(let i=0; i < inputSplit.length; i++) {
+//     if(inputSplit[i] === inputSplit[i].toUpperCase()){
+//         let lower = '';
+//         lower = inputSplit[i].toLowerCase();
+//         arr.push(lower);
+//     } else {
+//         let upper = '';
+//         upper = inputSplit[i].toUpperCase();
+//         arr.push(upper);
+//     }    
+// }
+// for (let j=0; j < arr.length; j++){
+//     result += arr[j];
+// }
+// console.log(result);
+// // Q49. 최대값 구하기
+// const num = prompt('숫자를 공백으로 구분해서 입력하세요.', '');   
+// // 10 9 8 7 6 5 4 3 2 1
+// const numArr = num.split(' '); // ...n 배열 요소 값 가져오기
+// console.log(Math.max(...numArr));
+
+let num = prompt('숫자를 공백으로 구분해서 입력하세요.', '').split(' ').map((n) => { return parseInt(n, 10);})
+
+num.sort((a,b) => {
+    return a - b;
+});
+console.log(num[num.length - 1]);
