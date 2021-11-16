@@ -199,3 +199,4 @@ const items = prompt('입력해주세요.').split(' ').map((n) => {
 });
 
 console.log(bubble(items));
+
