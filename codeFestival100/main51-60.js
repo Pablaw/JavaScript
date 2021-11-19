@@ -36,26 +36,48 @@
 //   console.log(mergeSort(array));
 
 // Q52. quick sort
-function quickSort(arr){
-  if (arr.length <= 1){
-    return arr;
-  }
+// function quickSort(arr){
+//   if (arr.length <= 1){
+//     return arr;
+//   }
 
-  const pivot = arr[0];
-  const left = [];
-  const right = [];
+//   const pivot = arr[0];
+//   const left = [];
+//   const right = [];
 
-  for (let i=1; i<arr.length; i++){
-    if(arr[i] < pivot){
-      left.push(arr[i]);
-    } else {
-      right.push(arr[i]);
-    }
+//   for (let i=1; i<arr.length; i++){
+//     if(arr[i] < pivot){
+//       left.push(arr[i]);
+//     } else {
+//       right.push(arr[i]);
+//     }
+//   }
+//   return quickSort(left).concat(pivot, quickSort(right));
+// }
+
+// const array = prompt('배열을 입력하세요').split(' ').map(n => parseInt(n, 10));
+
+// console.log(quickSort(array));
+
+//Q53. 괄호 문자열 // '(',')'
+const str = prompt('괄호 문자열을 입력하세요.', '').split('');
+
+function solution () {
+  let a = '(';
+  let b = ')';
+  let countA = str.filter(element => a === element).length;
+  let countB = str.filter(element => b === element).length;
+  let indexA = str.indexOf(a, 0);
+  let indexB = str.indexOf(b, 0);
+ 
+  if(countA === countB && indexA < indexB) {
+        return true;
+  } else {
+    return false;
   }
-  return quickSort(left).concat(pivot, quickSort(right));
 }
-
-const array = prompt('배열을 입력하세요').split(' ').map(n => parseInt(n, 10));
-
-console.log(quickSort(array));//
-
+if(solution() === true) {
+  console.log('YES');
+} else {
+  console.log('NO');
+}
