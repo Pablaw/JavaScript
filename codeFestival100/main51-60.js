@@ -82,18 +82,18 @@ if(solution() === true) {
   console.log('NO');
 } */
 //Q54. 연속되는 수
-let n = prompt('공백으로 구분하여 숫자들을 입력하세요.', '').split(' ');
+/* let n = prompt('공백으로 구분하여 숫자들을 입력하세요.', '').split(' ').map(n => parseInt(n, 10));
 
+let answer = '';
 
-  let answer = '';
 function solution () {
-for(let i=1; i < n.length - 1; i++) {
-    if(Number(n[i-1]) + 1 !== Number(n[i])) {
-      answer = console.log('NO');
+for(let i=1; i < n.length; i++) {
+    if(n[i] !== n[i - 1] + 1) {
+      answer = 'NO';
       break;
     } else {
-      answer = console.log('YES');
+      answer = 'YES';
     }
   } return answer;
 }
-console.log(solution());
+console.log(solution()); */
