@@ -60,7 +60,7 @@
 // console.log(quickSort(array));
 
 //Q53. 괄호 문자열 // '(',')'
-const str = prompt('괄호 문자열을 입력하세요.', '').split('');
+/* const str = prompt('괄호 문자열을 입력하세요.', '').split('');
 
 function solution () {
   let a = '(';
@@ -80,5 +80,20 @@ if(solution() === true) {
   console.log('YES');
 } else {
   console.log('NO');
+} */
+//Q54. 연속되는 수
+let n = prompt('공백으로 구분하여 숫자들을 입력하세요.', '').split(' ');
+
+
+  let answer = '';
+function solution () {
+for(let i=1; i < n.length - 1; i++) {
+    if(Number(n[i-1]) + 1 !== Number(n[i])) {
+      answer = console.log('NO');
+      break;
+    } else {
+      answer = console.log('YES');
+    }
+  } return answer;
 }
-//
+console.log(solution());
