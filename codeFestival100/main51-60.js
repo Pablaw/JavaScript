@@ -98,23 +98,47 @@ for(let i=1; i < n.length; i++) {
 }
 console.log(solution()); */
 //Q55. 하노이의 탑
-const route = [];
+// const route = [];
 
-function hanoi(num, start, end, temp){
-  //원판이 한 개일 때에는 바로 옮기면 됩니다.
-  if (num === 1) {
-    route.push([start, end]);
-    return NaN;
+// function hanoi(num, start, end, temp){
+//   //원판이 한 개일 때에는 바로 옮기면 됩니다.
+//   if (num === 1) {
+//     route.push([start, end]);
+//     return NaN;
+//   }
+
+//   //원반이 n-1개를 경유기둥으로 옮기고
+//   hanoi(num-1, start, temp, end);
+//   //가장 큰 원반은 목표기둥으로
+//   route.push([start, end]);
+//   //경유기둥과 시작기둥을 바꿉니다.
+//   hanoi(num-1, temp, end, start);
+// }
+
+// hanoi(6, 'A', 'B', 'C', 'D', 'E', 'F');
+// console.log(route);
+// console.log(route.length);
+
+//Q56. 객체의 함수 응용
+nationWidth = {
+       'korea': 220877,
+       'Rusia': 17098242,
+       'China': 9596961,
+       'France': 543965,
+       'Japan': 377915,
+       'England' : 242900,
   }
+let arrKeys = Object.keys(nationWidth);
+let arrValues = Object.values(nationWidth);
+let arrResult = [];
 
-  //원반이 n-1개를 경유기둥으로 옮기고
-  hanoi(num-1, start, temp, end);
-  //가장 큰 원반은 목표기둥으로
-  route.push([start, end]);
-  //경유기둥과 시작기둥을 바꿉니다.
-  hanoi(num-1, temp, end, start);
+for(let i=1; i <= arrValues.length - 1; i++) {
+  arrResult.push(Math.abs(arrValues[0] - arrValues[i]));
 }
 
-hanoi(6, 'A', 'B', 'C', 'D', 'E', 'F');
-console.log(route);
-console.log(route.length);
+let min = Math.min(...arrResult);
+let answer= arrResult.indexOf(min);
+
+console.log(`${arrKeys[answer + 1]} ${min}`);
+
+  
