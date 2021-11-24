@@ -120,25 +120,33 @@ console.log(solution()); */
 // console.log(route.length);
 
 //Q56. 객체의 함수 응용
-nationWidth = {
-       'korea': 220877,
-       'Rusia': 17098242,
-       'China': 9596961,
-       'France': 543965,
-       'Japan': 377915,
-       'England' : 242900,
-  }
-let arrKeys = Object.keys(nationWidth);
-let arrValues = Object.values(nationWidth);
-let arrResult = [];
+// nationWidth = {
+//        'korea': 220877,
+//        'Rusia': 17098242,
+//        'China': 9596961,
+//        'France': 543965,
+//        'Japan': 377915,
+//        'England' : 242900,
+//   }
+// let arrKeys = Object.keys(nationWidth);
+// let arrValues = Object.values(nationWidth);
+// let arrResult = [];
 
-for(let i=1; i <= arrValues.length - 1; i++) {
-  arrResult.push(Math.abs(arrValues[0] - arrValues[i]));
+// for(let i=1; i <= arrValues.length - 1; i++) {
+//   arrResult.push(Math.abs(arrValues[0] - arrValues[i]));
+// }
+
+// let min = Math.min(...arrResult);
+// let answer= arrResult.indexOf(min);
+
+// console.log(`${arrKeys[answer + 1]} ${min}`);
+
+//Q57. 1의 개수
+let n = prompt('최대값 숫자를 입력해주세요.', '');
+let sum = '';
+for(let i=0; i <= n; i++) {
+  sum += i;
 }
-
-let min = Math.min(...arrResult);
-let answer= arrResult.indexOf(min);
-
-console.log(`${arrKeys[answer + 1]} ${min}`);
-
-  
+let arr = sum.split('');
+let answer = arr.filter(element => '1' ===element).length;
+console.log(answer);
