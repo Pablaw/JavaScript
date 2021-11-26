@@ -142,11 +142,27 @@ console.log(solution()); */
 // console.log(`${arrKeys[answer + 1]} ${min}`);
 
 //Q57. 1의 개수
-let n = prompt('최대값 숫자를 입력해주세요.', '');
-let sum = '';
-for(let i=0; i <= n; i++) {
-  sum += i;
+// let n = prompt('최대값 숫자를 입력해주세요.', '');
+// let sum = '';
+// for(let i=0; i <= n; i++) {
+//   sum += i;
+// }
+// let arr = sum.split('');
+// let answer = arr.filter(element => '1' ===element).length;
+// console.log(answer);
+
+//Q58. 콤마 찍기 // 123456789
+let n = prompt('숫자를 입력해주세요.', '').split('');
+let arr = [];
+
+for (let i=0; i < n.length; i++) {
+  if(i > 1 && i % 3 === 0) {
+    arr.unshift(',');
+    arr.unshift(n[n.length - (i+1)]);
+  } else{
+      arr.unshift(n[n.length - (i+1)]);
+  }
 }
-let arr = sum.split('');
-let answer = arr.filter(element => '1' ===element).length;
+let answer = arr.join('');
+
 console.log(answer);
