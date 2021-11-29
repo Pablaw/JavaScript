@@ -152,7 +152,7 @@ console.log(solution()); */
 // console.log(answer);
 
 //Q58. 콤마 찍기 // 123456789
-let n = prompt('숫자를 입력해주세요.', '').split('');
+/* let n = prompt('숫자를 입력해주세요.', '').split('');
 let arr = [];
 
 for (let i=0; i < n.length; i++) {
@@ -165,4 +165,30 @@ for (let i=0; i < n.length; i++) {
 }
 let answer = arr.join('');
 
-console.log(answer);
+console.log(answer); */
+
+//Q59. 빈칸채우기
+/*
+let n = prompt('문자열을 입력해주세요.', '').split('');
+let arr = [];
+let arrLeft = [];
+let arrRight = [];
+
+for(let i=0; i < 50; i++) {
+  arr.push('=');
+}
+
+let hf = Math.floor((arr.length - n.length) / 2);
+
+for(let j=0; j < hf; j++) {
+  arrLeft.push('=');
+  arrRight.push('=');
+}
+let answer = arrLeft.join('') + n.join('') + arrRight.join('');
+
+console.log(answer);*/
+
+let str = prompt('문자열을 입력하세요', '');
+let mid = 25 + parseInt(str.length / 2, 10);
+let left = str.padStart(mid, '=');
+console.log(left.padEnd(50, '='));
