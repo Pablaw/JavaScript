@@ -195,22 +195,14 @@ console.log(answer);*/
 
 //Q60. 번호 매기기
 students = ['강은지','김유정','박현서','최성훈','홍유진','박지호','권윤일','김채리','한지호','김진이','김민호','강채연', '이철화', '김동훈', '국영현']
-const objName = students;
-objName.sort();
-let answer = '';
-
-for (let i=0; i < objName.length; i++) {
-     answer = `번호: ${i + 1}, 이름: ${objName[i]}`;
-     console.log(answer);
-}
-
-
-// let keys = Object.keys(obj1);
-// let values = Object.values(obj1);
+// const objName = students;
+// objName.sort();
 // let answer = '';
-// for(let i=0; i < keys.length; i++) {
-//     answer = `번호: ${keys[i]}, 이름: ${values[i]}`;
-//     console.log(answer);
+
+// for (let i=0; i < objName.length; i++) {
+//      answer = `번호: ${i + 1}, 이름: ${objName[i]}`;
+//      console.log(answer);
 // }
-
-
+for(let a in students) {
+  console.log(`번호: ${parseInt(a, 10) + 1}, 이름: ${students[a]}`);
+}
