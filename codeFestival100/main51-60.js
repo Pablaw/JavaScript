@@ -188,7 +188,29 @@ let answer = arrLeft.join('') + n.join('') + arrRight.join('');
 
 console.log(answer);*/
 
-let str = prompt('문자열을 입력하세요', '');
-let mid = 25 + parseInt(str.length / 2, 10);
-let left = str.padStart(mid, '=');
-console.log(left.padEnd(50, '='));
+// let str = prompt('문자열을 입력하세요', '');
+// let mid = 25 + parseInt(str.length / 2, 10);
+// let left = str.padStart(mid, '=');
+// console.log(left.padEnd(50, '='));
+
+//Q60. 번호 매기기
+students = ['강은지','김유정','박현서','최성훈','홍유진','박지호','권윤일','김채리','한지호','김진이','김민호','강채연', '이철화', '김동훈', '국영현']
+const objName = students;
+objName.sort();
+let answer = '';
+
+for (let i=0; i < objName.length; i++) {
+     answer = `번호: ${i + 1}, 이름: ${objName[i]}`;
+     console.log(answer);
+}
+
+
+// let keys = Object.keys(obj1);
+// let values = Object.values(obj1);
+// let answer = '';
+// for(let i=0; i < keys.length; i++) {
+//     answer = `번호: ${keys[i]}, 이름: ${values[i]}`;
+//     console.log(answer);
+// }
+
+
